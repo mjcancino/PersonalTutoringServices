@@ -23,7 +23,7 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.home_activity);
+        setContentView(R.layout.dashboard);
 
         drawerLayout = findViewById(R.id.drawerLayout);
         imageMenu = findViewById(R.id.imageMenu);
@@ -49,14 +49,7 @@ public class HomeActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 // Handle navigation item clicks
                 switch (item.getItemId()) {
-                    // Handle different menu items as needed
-                    case R.id.menu_item_1:
-                        // Do something when menu item 1 is clicked
-                        break;
-                    case R.id.menu_item_2:
-                        // Do something when menu item 2 is clicked
-                        break;
-                    // Add more cases for other menu items
+
                 }
 
                 // Close the drawer after handling the item click
@@ -75,5 +68,4 @@ public class HomeActivity extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 }
-
 
