@@ -86,7 +86,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
         android:gravity="center"
-        android:text="mjcancino"
+        android:text="User14896"
         android:textColor="@color/text_or_icon"
         android:textSize="22dp"
         app:layout_constraintEnd_toEndOf="parent"
