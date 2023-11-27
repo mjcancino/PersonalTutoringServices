@@ -32,6 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 // Handle login button click
                 performLogin();
+
             }
         });
 
@@ -64,8 +65,12 @@ public class MainActivity extends AppCompatActivity {
         // TODO: Implement your authentication logic here
         // For demo purposes, checking if fields are not empty
         if (!username.isEmpty() && !password.isEmpty()) {
-            // Successful login, you might navigate to another screen or perform other actions
+            // Successful login, navigate to HomeActivity
             Toast.makeText(this, "Login successful!", Toast.LENGTH_SHORT).show();
+            Intent intent = new Intent(MainActivity.this, HomeActivity.class);
+            startActivity(intent);
+            performLogin();
+            finish(); // Optional: Finish the MainActivity so it's not in the back stack
         } else {
             // Display an error message if fields are empty
             Toast.makeText(this, "Please enter username and password", Toast.LENGTH_SHORT).show();
