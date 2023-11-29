@@ -35,10 +35,7 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
-        NavigationView navigationView = findViewById(R.id.navigationView);
-        navigationView.setItemIconTintList(null);
-
+        
         // Set click listener for the "Forgot password?" text
         textViewForgotPassword.setOnClickListener(new View.OnClickListener() {
             @Override
