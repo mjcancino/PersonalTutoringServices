@@ -55,9 +55,22 @@
                 android:text="@string/app_name"
                 android:textColor="@color/white"
                 android:textSize="18sp"
-                android:textStyle="bold"/>
+                android:textStyle="bold" />
+
 
         </LinearLayout>
+
+       
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageSearch"
+            android:layout_width="53dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="340dp"
+            android:layout_marginTop="16dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/white" />
 
         <TextView
             android:id="@+id/welcome"
@@ -86,7 +99,78 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/welcome" />
 
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/payment"
+            android:layout_width="151dp"
+            android:layout_height="108dp"
+            android:layout_below="@id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="418dp"
+            android:layout_marginBottom="256dp"
+            android:backgroundTint="@color/dashboard_item_1"
+            android:text="Payment"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="54dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/hireTutor"
+            android:layout_width="151dp"
+            android:layout_height="108dp"
+            android:layout_below="@id/user"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="418dp"
+            android:layout_marginBottom="256dp"
+            android:backgroundTint="@color/dashboard_item_2"
+            android:text="Hire Tutor"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="240dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/review"
+            android:layout_width="151dp"
+            android:layout_height="108dp"
+            android:layout_below="@id/user"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/dashboard_item_3"
+            android:text="Review"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="54dp"
+            tools:layout_editor_absoluteY="550dp" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/inbox"
+            android:layout_width="151dp"
+            android:layout_height="108dp"
+            android:layout_below="@id/user"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/dashboard_item_4"
+            android:text="Inbox"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="240dp"
+            tools:layout_editor_absoluteY="550dp" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/plusAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="@string/app_name"
+            android:src="@drawable/ic_add"
+            app:backgroundTint="@color/dashboard_item_1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:tint="@color/text_or_icon" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
+
+
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/navigationView"
